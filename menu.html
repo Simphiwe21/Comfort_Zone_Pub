@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfort Zone Pub - Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Comfort Zone Pub</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="events.html">Events & Promo</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="visit.html">Visit Us</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li class="auth-links" id="auth-links"></li>
+                    <li class="cart-icon"><a href="order.html">🛒 <span id="cart-count">0</span></a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            
+            <div class="menu-section">
+                <h3>Grilled Meats</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                       <div class="menu-image">
+                            <img src="images/Steak.jpg" alt="Classic Steak">
+                        </div>
+                        <div class="item-info">
+                            <h4>Classic Steak</h4>
+                            <p>12oz premium Steak, grilled to perfection with our signature seasoning</p>
+                            <div class="item-price">R104.99</div>
+                            <button class="add-to-cart" data-id="1" data-name="Steak" data-price="104.99">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="images/Burger with Chips.jpeg" alt="Comfort Zone Burger">
+                        </div>
+                        <div class="item-info">
+                            <h4>Comfort Zone Burger</h4>
+                            <p>1/2 lb beef patty with cheddar, lettuce, tomato, and our special sauce</p>
+                            <div class="item-price">R49.99</div>
+                            <button class="add-to-cart" data-id="2" data-name="Comfort Zone Burger" data-price="49.99">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                         <div class="menu-image">
+                            <img src="images/BBQ Wings - The Midwest Kitchen Blog.jpeg" alt="BBQ Wings">
+                        </div>
+                        <div class="item-info">
+                            <h4>BBQ Wings</h4>
+                            <p>Full rack of tender chicken wings glazed with our house-made BBQ sauce</p>
+                            <div class="item-price">R69.99</div>
+                            <button class="add-to-cart" data-id="3" data-name="BBQ Wings" data-price="69.99">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="images/Grilled Butterflied Chicken Recipe.jpg" alt="Grilled Chicken">
+                        </div>
+                        <div class="item-info">
+                            <h4>Grilled Chicken</h4>
+                            <p>Juicy chicken breast marinated in herbs and grilled to perfection</p>
+                            <div class="item-price">R64.99</div>
+                            <button class="add-to-cart" data-id="4" data-name="Herb Grilled Chicken" data-price="64.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-section">
+                <h3>Beverages</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                         <div class="menu-image">
+                            <img src="images/Corona.jpeg" alt="Beer Selection">
+                        </div>
+                        <div class="item-info">
+                            <h4>Beer Selection</h4>
+                            <p>Rotating selection of local and imported beers</p>
+                            <div class="item-price">R24.99</div>
+                            <button class="add-to-cart" data-id="5" data-name="Beer" data-price="24.99">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                         <div class="menu-image">
+                            <img src="images/Cocktail.jpeg" alt="Cocktails">
+                        </div>
+                        <div class="item-info">
+                            <h4>Cocktails</h4>
+                            <p>Our bartender's special creations using premium spirits</p>
+                            <div class="item-price">R49.99</div>
+                            <button class="add-to-cart" data-id="6" data-name="Cocktail" data-price="49.99">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                         <div class="menu-image">
+                            <img src="images/Jack Daniels vs Johnnie Walker - The Ultimate Whiskey Brand Battle! - Whiskey Watch.jpg" alt="Wine Selection">
+                        </div>
+                        <div class="item-info">
+                            <h4>Wine Selection</h4>
+                            <p>Curated selection of red, white, and sparkling wines</p>
+                            <div class="item-price">R249.99</div>
+                            <button class="add-to-cart" data-id="7" data-name="Wine" data-price="249.99">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="images/Soft Dinks.jpeg" alt="Soft Drinks">
+                        </div>
+                        <div class="item-info">
+                            <h4>Soft Drinks</h4>
+                            <p>Coke, Diet Coke, Sprite, Lemonade, Appletiser</p>
+                            <div class="item-price">R14.99</div>
+                            <button class="add-to-cart" data-id="8" data-name="Soft Drink" data-price="14.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Comfort Zone Pub</h3>
+                     <p>191 Anton Lembede St (Smith Stree)</p>
+                    <p>Phone: (+27) 72 517 5122</p>
+                    <p>Email: kumarsingh2011@live.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 10am - 11pm</p>
+                    <p>Friday - Saturday: 10am - 1am</p>
+                    <p>Sunday: 12pm - 10pm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Comfort Zone Pub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="notification" class="notification hidden">
+        <span id="notification-text"></span>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

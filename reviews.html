@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfort Zone Pub - Reviews</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Comfort Zone Pub</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="events.html">Events & Promo</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="visit.html">Visit Us</a></li>
+                    <li><a href="reviews.html" class="active">Reviews</a></li>
+                    <li class="auth-links" id="auth-links"></li>
+                    <li class="cart-icon"><a href="order.html">🛒 <span id="cart-count">0</span></a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="reviews">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            
+            <div class="add-review-section" id="add-review-section">
+                <h3>Share Your Experience</h3>
+                <form id="review-form">
+                    <div class="form-group">
+                        <label for="review-rating">Rating</label>
+                        <div class="star-rating">
+                            <span class="star" data-rating="1">★</span>
+                            <span class="star" data-rating="2">★</span>
+                            <span class="star" data-rating="3">★</span>
+                            <span class="star" data-rating="4">★</span>
+                            <span class="star" data-rating="5">★</span>
+                        </div>
+                        <input type="hidden" id="review-rating" name="rating" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="review-title">Review Title</label>
+                        <input type="text" id="review-title" name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="review-comment">Your Review</label>
+                        <textarea id="review-comment" name="comment" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit Review</button>
+                </form>
+            </div>
+
+            <div class="login-prompt" id="login-prompt">
+                <div class="login-prompt-content">
+                    <h3>Share Your Experience</h3>
+                    <p>Login to write a review and share your thoughts about Comfort Zone Pub</p>
+                    <div class="prompt-buttons">
+                        <a href="login.html" class="btn btn-primary">Login</a>
+                        <a href="signup.html" class="btn btn-secondary">Create Account</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-list">
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Philani Nyembe</h4>
+                            <div class="review-rating">
+                                ★★★★★ <span class="rating-text">5.0</span>
+                            </div>
+                        </div>
+                        <div class="review-date">October 15, 2023</div>
+                    </div>
+                    <h5 class="review-title">Best steak in town!</h5>
+                    <p class="review-comment">The ribeye steak was cooked to perfection. The atmosphere was cozy and the service was exceptional. Will definitely be coming back!</p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Junior Madlopha</h4>
+                            <div class="review-rating">
+                                ★★★★☆ <span class="rating-text">4.0</span>
+                            </div>
+                        </div>
+                        <div class="review-date">October 04, 2025</div>
+                    </div>
+                    <h5 class="review-title">Great food and live music</h5>
+                    <p class="review-comment">We visited on a Friday night and the live band was amazing! The burgers are delicious and the craft beer selection is impressive.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Comfort Zone Pub</h3>
+                     <p>191 Anton Lembede St (Smith Stree)</p>
+                    <p>Phone: (+27) 72 517 5122</p>
+                    <p>Email: kumarsingh2011@live.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 10am - 11pm</p>
+                    <p>Friday - Saturday: 10am - 1am</p>
+                    <p>Sunday: 12pm - 10pm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Comfort Zone Pub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="notification" class="notification hidden">
+        <span id="notification-text"></span>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfort Zone Pub - Order Online</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Comfort Zone Pub</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="events.html">Events & Promo</a></li>
+                    <li><a href="order.html" class="active">Order</a></li>
+                    <li><a href="visit.html">Visit Us</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li class="auth-links" id="auth-links"></li>
+                    <li class="cart-icon"><a href="order.html">🛒 <span id="cart-count">0</span></a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="order">
+        <div class="container">
+            <h2>Your Order</h2>
+            
+            <div class="order-content">
+                <div class="cart-items">
+                    <h3>Cart Items</h3>
+                    <div id="cart-items-list">
+                        <p class="empty-cart">Your cart is empty. <a href="menu.html">Browse our menu</a> to add items.</p>
+                    </div>
+                    <div class="cart-total">
+                        <h4>Total: R<span id="cart-total">0.00</span></h4>
+                    </div>
+                </div>
+                
+                <div class="checkout-form">
+                    <h3>Checkout Information</h3>
+                    <form id="checkout-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Delivery Address</label>
+                            <textarea id="address" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="instructions">Special Instructions</label>
+                            <textarea id="instructions" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn" id="place-order-btn">Place Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Comfort Zone Pub</h3>
+                     <p>191 Anton Lembede St (Smith Stree)</p>
+                    <p>Phone: (+27) 72 517 5122</p>
+                    <p>Email: kumarsingh2011@live.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 10am - 11pm</p>
+                    <p>Friday - Saturday: 10am - 1am</p>
+                    <p>Sunday: 12pm - 10pm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Comfort Zone Pub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="notification" class="notification hidden">
+        <span id="notification-text"></span>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

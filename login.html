@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfort Zone Pub - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Comfort Zone Pub</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="events.html">Events & Promo</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="visit.html">Visit Us</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li class="auth-links" id="auth-links"></li>
+                    <li class="cart-icon"><a href="order.html">🛒 <span id="cart-count">0</span></a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-form">
+                <h2>Login to Your Account</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+                <p class="auth-link">
+                    Don't have an account? <a href="signup.html">Sign up here</a>
+                </p>
+                <div class="demo-account">
+                    <h4>Demo Account</h4>
+                    <p>Email: demo@comfortzonepub.com</p>
+                    <p>Password: password123</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Comfort Zone Pub</h3>
+                     <p>191 Anton Lembede St (Smith Stree)</p>
+                    <p>Phone: (+27) 72 517 5122</p>
+                    <p>Email: kumarsingh2011@live.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 10am - 11pm</p>
+                    <p>Friday - Saturday: 10am - 1am</p>
+                    <p>Sunday: 12pm - 10pm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Comfort Zone Pub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="notification" class="notification hidden">
+        <span id="notification-text"></span>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
